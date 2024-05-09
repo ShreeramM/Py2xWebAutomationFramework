@@ -32,5 +32,6 @@ def test_vwo_login_negative(setup):
     assert message == "Make Appointment"
     allure.attach(driver.get_screenshot_as_png(), name="Screenshot", attachment_type=AttachmentType.PNG)
     katalon_Page.katalon_logout()
+    time.sleep(5)
     allure.attach(driver.get_screenshot_as_png(), name="Screenshot", attachment_type=AttachmentType.PNG)
 
